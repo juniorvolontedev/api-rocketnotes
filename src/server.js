@@ -5,7 +5,7 @@ const app = express();
 app.get('/message/:id/:user', (request, response) => {
   const { id, user } = request.params;
 
-  response.send(`ID da mensagem: ${id}. Para o user: ${user}`);
+  response.send(`ID da mensagem: ${id}. Para o username: ${user}`);
 });
 
 app.get('/users', (request, response) => {
